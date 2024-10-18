@@ -1,5 +1,4 @@
 import React from "react";
-
 const Login = () => {
   return (
     <div className="w-full flex h-screen justify-center items-center p-2">
