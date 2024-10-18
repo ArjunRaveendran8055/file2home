@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { TbMenuDeep } from "react-icons/tb";
-import { CgLogOut } from "react-icons/cg";
 import { Outlet } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +18,10 @@ const Navbar = () => {
                   Home
                 </a>
                 <a href="#" className="py-5 px-3">
-                  Services
+                  Tasks
                 </a>
                 <a href="#" className="py-5 px-3">
-                  About
-                </a>
-                <a href="#" className="py-5 px-3">
-                  Contact
+                  Catagories
                 </a>
                 <div className="logoutDiv flex justify-center items-center gap-2 bg-white text-black px-3 hover:scale-105 transition-all duration-100 py-1 rounded-lg cursor-pointer">
                   LogOut
