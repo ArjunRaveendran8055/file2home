@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const dbConnect = async (url) => {
   await mongoose
@@ -7,6 +7,4 @@ const dbConnect = async (url) => {
     .catch((err) => console.log("connection failed", err.message));
 };
 
-module.exports = {
-  dbConnect,
-};
+export default dbConnect;

@@ -1,10 +1,5 @@
-const express=require("express")
-const { signUpController } = require("../controllers/authController")
-const authRoutes=express.Router()
+import express from "express";
+import { signUpController } from "../controllers/authController.js";
+export const authRoutes = express.Router();
 
-
-authRoutes.post("/signUp",signUpController)
-
-module.exports={
-    authRoutes
-}
+authRoutes.post("/signUp", signUpController);

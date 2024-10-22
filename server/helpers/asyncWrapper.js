@@ -1,4 +1,4 @@
-const asyncWrapper= (controller)=>async(req,res,next)=>{
+ const asyncWrapper= (controller)=>async(req,res,next)=>{
     try{
         await controller(req,res,next)
     }
@@ -7,6 +7,5 @@ const asyncWrapper= (controller)=>async(req,res,next)=>{
     }
 }
 
-module.exports={
-    asyncWrapper
-}
+export default asyncWrapper
+

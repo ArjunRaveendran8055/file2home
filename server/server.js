@@ -1,5 +1,5 @@
-const { app } = require("./app");
-const { dbConnect } = require("./DB/dbConnect");
+import app from "./app.js"
+import dbConnect from "../server/DB/dbConnect.js"
 
 process.on("uncaughtException",(err)=>{
   console.log(`server shutting down due to uncaught exception ${err.message}`)
