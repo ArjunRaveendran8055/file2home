@@ -8,10 +8,10 @@ const Login = () => {
         </div>
         <div className="email flex flex-col gap-2 w-full font-bold pt-10">
           <div className="text flex w-full">EmailId</div>
-          <div className="inputBox flex w-full">
+          <div className="inputBox flex w-full bg-white">
             <input
               type="email"
-              className="flex w-full h-10 rounded-lg border shadow-md outline-none px-2 font-semibold"
+              className="flex w-full h-10 rounded-lg border bg-white shadow-md outline-none px-2 font-semibold"
             />
           </div>
         </div>

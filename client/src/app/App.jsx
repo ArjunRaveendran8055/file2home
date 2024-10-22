@@ -3,8 +3,11 @@ import Login from "../components/auth/Login";
 import SignUp from "../components/auth/SignUp";
 import Navbar from "../components/navBar/NavBar";
 import Home from "../components/Home/Home";
-
+import { server } from "../server";
+import axios from "axios"
 export default function App() {
+  axios.defaults.baseURL=`${server}`
+  
   return (
     <div>
       <Routes>
