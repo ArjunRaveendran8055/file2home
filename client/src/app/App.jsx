@@ -1,23 +1,26 @@
-import { Route, Routes } from "react-router-dom";
-import Login from "../components/auth/Login";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "../layouts/Dashboard";
+import axios from "axios";
+import Home from "../pages/dashboard/Home";
+import { SERVER_URL } from "../server";
 import SignUp from "../components/auth/SignUp";
-import Navbar from "../components/navBar/NavBar";
-import Home from "../components/Home/Home";
-import { server } from "../server";
-import axios from "axios"
-export default function App() {
-  axios.defaults.baseURL=`${server}`
-  
+import Login from "../components/auth/Login";
+
+function App() {
+  axios.defaults.baseURL = SERVER_URL;
+  axios.defaults.withCredentials = true;
   return (
-    <div>
+    <div className="">
       <Routes>
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="" element={<Navbar />}>
-        <Route path="/"element={<Home/>}/>
-        <Route />
+        <Route path="/" element={<Login />} />
+
+        <Route path="" element={<Dashboard />}>
+          <Route path="/home" element={<Home />} />
         </Route>
       </Routes>
     </div>
   );
 }
+
+export default App;

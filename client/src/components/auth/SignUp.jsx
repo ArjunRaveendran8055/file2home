@@ -21,12 +21,19 @@ const SignUp = () => {
   const validateForm = () => {
     let formIsValid = true;
     let errors = {};
-
+    //username exists
     if (!userData.userName) {
       errors.userName = "User name is required";
       formIsValid = false;
     }
 
+    //lenght of username
+    if (userData.userName.length < 6) {
+      errors.userName = "uName must be atleast 6 characters";
+      formIsValid = false;
+    }
+
+    //email validation
     if (!userData.email) {
       errors.email = "Email is required";
       formIsValid = false;
@@ -35,6 +42,7 @@ const SignUp = () => {
       formIsValid = false;
     }
 
+    //is password exists
     if (!userData.password) {
       errors.password = "Password is required";
       formIsValid = false;
@@ -46,7 +54,7 @@ const SignUp = () => {
     }
 
     if (userData.password !== userData.cnPassword) {
-      errors.cnPassword = "Passwords do not match";
+      errors.cnPassword = "unmatching passwords";
       formIsValid = false;
     }
     setErrors(errors);
@@ -63,7 +71,7 @@ const SignUp = () => {
         console.log(res.data);
       })
       .catch((err) => {
-        console.log(err.message);
+        console.log(err.response.data.error.split(", ")[0]);
       });
   };
 
@@ -88,7 +96,7 @@ const SignUp = () => {
               }}
             />
           </div>
-          {errors.userName}
+          <span className="text-red-500 font-extralight">{errors.userName}</span>
         </div>
         <div className="email flex flex-col gap-2 w-full font-bold">
           <div className="text flex w-full">EmailId</div>
@@ -103,7 +111,8 @@ const SignUp = () => {
               }}
             />
           </div>
-          {errors.email}
+          <span className="text-red-500 font-extralight">{errors.email}</span>
+
         </div>
         <div className="password flex flex-col gap-2 w-full font-bold">
           <div className="text flex w-full">Password</div>
@@ -118,7 +127,7 @@ const SignUp = () => {
               }}
             />
           </div>
-          {errors.password}
+          <span className="text-red-500 font-extralight">{errors.password}</span>
         </div>
         <div className="conPassword flex flex-col gap-2 w-full font-bold">
           <div className="text flex w-full">Confirm Password</div>
@@ -133,7 +142,7 @@ const SignUp = () => {
               }}
             />
           </div>
-          {errors.cnPassword}
+          <span className="text-red-500 font-extralight">{errors.cnPassword}</span>
         </div>
         <div className="btnDiv w-full flex justify-center">
           <button

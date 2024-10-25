@@ -8,6 +8,7 @@ app.use(morgan("dev"))
 
 
 import {authRoutes} from "../server/routes/authRoutes.js"
+import  errorHandler  from "./middleWares/errorHandler.js";
 
 //cross origin configuration
 app.use(cors({
@@ -27,6 +28,7 @@ app.use("/auth",authRoutes)
 
 
 //errorHandler
+app.use(errorHandler)
 
 export default app
 

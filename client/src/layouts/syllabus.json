@@ -1,0 +1,171 @@
+
+    [
+  {
+    "syllabus": "cbse",
+    "levels": [
+      {
+        "level": "high school (8-10)",
+        "txt": "high school (8-10)",
+        "classes": [
+          {
+            "cls": 8,
+            "txt": "Class 8"
+          },
+          {
+            "cls": 9,
+            "txt": "Class 9"
+          },
+          {
+            "cls": 10,
+            "txt": "Class 10"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary bio (11-12)",
+        "txt": "higher secondary bio (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary cs (11-12)",
+        "txt": "higher secondary cs (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary com(maths) (11-12)",
+        "txt": "higher secondary com(maths) (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary com(computer) (11-12)",
+        "txt": "higher secondary com(computer) (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "syllabus": "state",
+    "levels": [
+      {
+        "level": "upper primary (5-7)",
+        "txt": "upper primary (5-7)",
+        "classes": [
+          {
+            "cls": 7,
+            "txt": "Class 7"
+          }
+        ]
+      },
+      {
+        "level": "high school (8-10)",
+        "txt": "high school (8-10)",
+        "classes": [
+          {
+            "cls": 8,
+            "txt": "Class 8"
+          },
+          {
+            "cls": 9,
+            "txt": "Class 9"
+          },
+          {
+            "cls": 10,
+            "txt": "Class 10"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary bio (11-12)",
+        "txt": "higher secondary bio (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary cs (11-12)",
+        "txt": "higher secondary cs (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary com(maths) (11-12)",
+        "txt": "higher secondary com(maths) (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      },
+      {
+        "level": "higher secondary com(computer) (11-12)",
+        "txt": "higher secondary com(computer) (11-12)",
+        "classes": [
+          {
+            "cls": 11,
+            "txt": "Class 11"
+          },
+          {
+            "cls": 12,
+            "txt": "Class 12"
+          }
+        ]
+      }
+    ]
+  }
+]
