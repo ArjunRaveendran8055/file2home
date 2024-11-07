@@ -15,13 +15,13 @@ const CustToastContainer = () => {
   };
   return (
     <div
-      className={`${toastView ? "" : "hidden"} 
-  fixed z-50 h-[100vh] w-full 
+      className={`p-2 ${toastView ? "" : "hidden"} 
+  fixed z-50 h-[100vh] w-full  
   ${type === "error" && "backdrop-blur-sm"}  
   z-50 flex justify-center items-center
   `}
     >
-      <div className="toast-container z-50 bg-white sm:px-10 md:px-12 lg:px-24 border-[1px] shadow-xl rounded-md flex flex-col items-center">
+      <div className="toast-container sm:w-full max-w-2xl z-50 bg-white sm:px-10 md:px-12 lg:px-24 border-[1px] shadow-xl rounded-md flex flex-col items-center">
         {type === "error" ? (
           <div
             className={`flex flex-col mt-5  text-red-500 justify-center items-center`}

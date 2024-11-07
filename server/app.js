@@ -12,7 +12,7 @@ import  errorHandler  from "./middleWares/errorHandler.js";
 
 //cross origin configuration
 app.use(cors({
-  origin:"http://localhost:5173"
+  origin:["http://localhost:5173"]
 }))
 
 //dotEnv config

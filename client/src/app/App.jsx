@@ -5,12 +5,14 @@ import Home from "../pages/dashboard/Home";
 import { SERVER_URL } from "../server";
 import SignUp from "../components/auth/SignUp";
 import Login from "../components/auth/Login";
+import CustToastContainer from "../components/features/toast/ToastContainer";
 
 function App() {
   axios.defaults.baseURL = SERVER_URL;
-  axios.defaults.withCredentials = true;
+  // axios.defaults.withCredentials = true;
   return (
     <div className="">
+      <CustToastContainer/>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Login />} />
